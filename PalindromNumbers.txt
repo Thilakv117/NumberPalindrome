@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Main
+{
+  public static void main(String args[])
+  {
+    
+  Scanner sc = new Scanner(System.in);
+  System.out.print("Enter the Num: ");
+  int num = sc.nextInt();
+  int rev =0;
+  int org = num;
+  while(num % 10> 0)
+  {
+   rev = rev * 10 + (num % 10);
+   num = num/10;
+  }
+  System.out.println("The Palindrome Number is: " +rev);
+   if(rev == org)
+   {
+     System.out.println("The palindrome number is True");
+   }
+   else
+   {
+      System.out.println("The palindrome number is not True");
+   }
+    }
+}
